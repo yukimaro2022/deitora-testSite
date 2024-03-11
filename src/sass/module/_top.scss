@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.top{
+    margin-top: rem(60);
+    @include mq(md) {
+        margin-top: rem(120);
+    }
+}
+
+.top__video video{
+    width: 100%;
+    margin-right: calc(50% - 50vw);
+    height: auto;
+}
+.top__inner{
+    @include mq(md) {
+        max-width: 100%;
+        width: 100%;
+        padding-right: rem(60);
+        padding-left: rem(60);
+    }
+}

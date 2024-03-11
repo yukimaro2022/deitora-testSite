@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.header-nav__item + .header-nav__item{
+    margin-top: rem(24);
+}
+.header-nav__item a{
+    color: #B98F50;
+    display: inline-block;
+    width: 100%;
+}

@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.section-title{
+    font-size: rem(24);
+    position: relative;
+    padding-top: rem(30);
+    text-align: center;
+    @include mq(md) {
+        font-size: rem(40);
+        padding-top: rem(52);
+        text-indent: .25em;
+    }
+}
+.section-title span{
+    font-family: $footer-font-family;
+    color: #B98F50;
+    font-weight: 100;
+    @include mq(md) {
+        font-size: rem(50);
+    }
+}
+.section-title:before{
+    content: "";
+    width:rem(60);
+    height:rem(30);
+    background-image: url(../images/common/pc-img/title-color.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform:translate(-50%,0);
+    @include mq(md) {
+        max-width: rem(133);
+        width: 100%;
+        height: rem(52);
+    }
+}
